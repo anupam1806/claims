@@ -1,0 +1,118 @@
+JDeveloper
+
+Mediator
+
+1.there is almost same usage of bpel and mediator.
+1. if there is a lot of complex business rule it is better to use bpel else use mediator.
+2. Routing rules are used to create business rules.
+3. if you want to get output click on validate Xsd() and add the echo reply it will give the interface of options and then click on assign values it will give you the same interface as bpel.
+
+Transform 
+XSLT : Extensible Stylesheet Language Transformations.
+this is used to transform  the data from source to desired format.(Schema can be different in source and target).
+Xpath is the major element in xslt standard.
+Xpath can be used to navigate through elements and attributes.
+In transform we can validate the data and can check for the existance of nodes before doing any assignments.
+
+Translate to Native
+it is used to translate from json to xml or vice versa based on source and target.
+
+
+SOAP ADAPTER DEMO
+
+the agenda is we get the input from the user whatever response we get from the soap service we reply it back.
+we can drop the soap adapter at service or reference 
+here we are replying back to the response we get after processing the input thats the reason we use as reference now.
+1.to create a soap service first we need to get the previous applications wsdl or url and use their functionality.
+2. we need to use invoke when ever we use external webservices from reference.
+
+
+XA (EXTENDER ARCHITECTURE)
+difference btw xa (global transaction) and non xa(local transaction)
+
+XA transaction works on transaction manager                NON XA transaction single source makes all transaction works itself.
+co-ordinates one or more databases.
+
+
+how to create data source
+
+open weblogic console
+click on services -> click on JDBC -> click on datasource -> new -> configure.
+
+difference btw for and for each loop
+
+		for 						for each
+1. for variable is always int			1. for each variable is same as the type of items in collections.
+2. for loops are faster than that		2. for each is slower than for loop
+3. for loop iterates a statement or block	3. for each used to iterate through the items in object collections atleast once.
+statements till the condition fails
+4. need loop bounds				4. no need of loop bounds.
+
+
+WSDL (web service description language)
+WSDL, or Web Service Description Language, is an XML based definition language. It's used for describing the functionality of a SOAP based web service.
+used to describe methods and services.
+
+WSDL is for SOAP 
+
+WADL is for REST
+
+
+Namespace is used to avoid conflict between two elements.
+include refers to declaration or definition that are in same target namespace.
+import refers to declaration or definition that are in different target namespace.
+export is used to transfer data objects between databases.
+
+difference between services and components
+
+services are also known as a logical coupling of various parts so that the functionality of developing a business application can be achieved.
+components are also referred to as implementation approaches in order to create a service.
+
+DVM(DOMAIN VALUE MAP):
+It is defined as a static mapping between the trigger system and the source. It can also be used in transformations. Moreover, this value can be changed with the help of the SOA Composer.
+
+
+SCA : Service Component Architecture 
+This type of architecture provides an underlying programming model in order to design an application in the Oracle environment.
+the primary purpose of this SCA is to provide broad range of service strategies and technologies.
+
+agents 
+
+agents retrives the code from odi repository and then requests database servers, operating systems or scripting engines to excute that code 
+and after execution it updates the logs.
+3 tyes of agents 
+1. java EE agents : EE application deployed and runs in managed servers
+2. standalone agents: can be installed on source or target systems it requires jvm .
+3. colocated standalone agent : deployed and run in admin server.
+
+MDS META DATA STORE
+used for the code generation process, it is mainly used to reduce the size of JAR files and to eliminate the duplicates of various services.
+
+EM(Enterprise Manager) and Console
+at the time of deployment and testing the application we use EM.
+at the time of production of application we use console.
+
+odi contains two repository
+
+master repository : topology of resources and security and versions. master repository may have multiple work repository
+work repo : projects and models this is for development and execution.
+
+model: model contains the description of data sources.
+
+load plan : A Load Plan in Oracle Data Integrator (ODI) is an executable object that helps organize the execution of scenarios in a structured manner.
+parallel, sequential and conditional.
+
+
+knowledge modules
+
+knowledge modules are basically plug-ins that enables odi to create an executional code across technology.
+6 types of Knowledge modules
+1. reverse engineering : used to read the table or object metadata from data source
+2. journalizing : records the new and changed data.
+3. loading : efficiently extracts the data and load into the staging area from source.
+4. integrated : transforms data from staging area to target.
+5. check : checks for the errors in data.
+6.service : provides ability to expose data as web service.
+
+
+
